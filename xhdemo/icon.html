@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>XH后台管理系统</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="public/css/xh.css">
+    <link rel="stylesheet" type="text/css" href="public/css/xhico.css">
+    <link rel="stylesheet" type="text/css" href="public/css/main.css?tmp=23">
+    <link rel="stylesheet" type="text/css" href="public/Font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="public/js/jquery.js" type="text/javascript"></script>
+    <script src="public/js/xh.js?tmp=123" type="text/javascript"></script>
+    <script src="public/js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="xh-main">
+        <div class="t-box">
+            XH 的图标从网上采集的，本框架大部分引用Font Awesome图标字体库，Font Awesome图标字体库内容丰富，图标精美，操作多样简单，具体可以去<a href="https://fontawesome.dashgame.com/">Font Awesome官网上看</a>。
+        </div>
+        <div class="t-tab xh-md-10">
+            <div class="tab-title" style="border: none;">
+                最简单的引用方式：
+            </div>
+            <div class="tab-code">
+                <pre><h3 class="xh-code-h3">code</h3><div class="xh-clearfix"></div><ol><li>&lt;link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"&gt;</li></ol></pre>
+            </div>
+        </div>
+        <div class="t-tab xh-md-5">
+            <div class="tab-title" style="border: none;">
+                固定宽度：使用 fa-fw 可以将图标设置为一个固定宽度。主要用于不同宽度图标无法对齐的情况。 尤其在列表或导航时起到重要作用。
+            </div>
+            <div class="tab-code">
+                <pre><h3 class="xh-code-h3">code</h3><div class="xh-clearfix"></div><ol><li>&lt;i class="fa fa-home fa-fw"&gt;&lt;/i&gt;</li></ol></pre>
+            </div>
+        </div>
+        <div class="t-tab xh-md-5">
+            <div class="tab-title" style="border: none;">
+                动画：使用 fa-spin 类来使任意图标旋转，现在您还可以使用 fa-pulse 来使其进行8方位旋转。尤其适合 fa-spinner、fa-refresh 和 fa-cog 。
+            </div>
+            <div class="tab-code">
+                <pre><h3 class="xh-code-h3">code</h3><div class="xh-clearfix"></div><ol><li>&lt;i class="fa fa-home fa-spin"&gt;&lt;/i&gt;</li></ol></pre>
+            </div>
+        </div>
+        <div class="t-tab xh-md-5">
+            <div class="tab-title" style="border: none;">
+                组合使用：如果想要将多个图标组合起来，使用 fa-stack 类作为父容器， fa-stack-1x 作为正常比例的图标， fa-stack-2x 作为大一些的图标。还可以使用 fa-inverse 类来切换图标颜色。您可以在父容器中 通过添加 大图标 类来控制整体大小。
+            </div>
+            <div class="tab-code">
+                <pre><h3 class="xh-code-h3">code</h3><div class="xh-clearfix"></div><ol><li>&lt;span class="fa-stack fa-lg"&gt;</li><li>    &lt;i class="fa fa-square-o fa-stack-2x"&gt;&lt;/i&gt;</li><li>    &lt;i class="fa fa-twitter fa-stack-1x"&gt;&lt;/i&gt;</li><li>    &lt;i class="fa fa-flag fa-stack-1x fa-inverse"&gt;&lt;/i&gt;</li><li>    &lt;i class="fa fa-ban fa-stack-2x text-danger"&gt;&lt;/i&gt;</li><li>&lt;/span&gt;</li></ol></pre>
+            </div>
+        </div>
+        <div class="t-tab xh-md-5">
+            <div class="tab-title" style="border: none;">
+                旋转与翻转：使用 fa-rotate-* 和 fa-flip-* 类可以对图标进行任意旋转和翻转。
+            </div>
+            <div class="tab-code">
+                <pre><h3 class="xh-code-h3">code</h3><div class="xh-clearfix"></div><ol><li>&lt;i class="fa fa-shield fa-rotate-90"&gt;&lt;/i&gt;</li><li>&lt;i class="fa fa-shield fa-rotate-180"&gt;&lt;/i&gt;</li></ol></pre>
+            </div>
+        </div>
+        <div class="xh-clearfix"></div>
+        <div class="t-tab">
+            <ul id="tab-ico">
+                <li>
+                    <i class="fa fa-plus fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-plus"</div>
+                </li>
+                <li>
+                    <i class="fa fa-edit fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-edit"</div>
+                </li>
+                <li>
+                    <i class="fa fa-trash-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-trash-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-user-circle-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-user-circle-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-angle-down fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-angle-down"</div>
+                </li>
+                <li>
+                    <i class="fa fa-angle-right fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-angle-right"</div>
+                </li>
+                <li>
+                    <i class="fa fa-angle-left fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-angle-left"</div>
+                </li>
+                <li>
+                    <i class="fa fa-angle-up fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-angle-up"</div>
+                </li>
+                <li>
+                    <i class="fa fa-toggle-on fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-toggle-on"</div>
+                </li>
+                <li>
+                    <i class="fa fa-toggle-off fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-toggle-off"</div>
+                </li>
+                <li>
+                    <i class="fa fa-picture-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-picture-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-audio-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-audio-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-code-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-code-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-excel-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-excel-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-image-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-image-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-movie-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-movie-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-pdf-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-pdf-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-photo-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-photo-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-powerpoint-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-powerpoint-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-sound-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-sound-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-video-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-video-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-word-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-word-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-file-zip-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-file-zip-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-search-plus fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-search-plus"</div>
+                </li>
+                <li>
+                    <i class="fa fa-search-minus fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-search-minus"</div>
+                </li>
+                <li>
+                    <i class="fa fa-search fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-search"</div>
+                </li>
+                <li>
+                    <i class="fa fa-sort fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-sort"</div>
+                </li>
+                <li>
+                    <i class="fa fa-users fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-users"</div>
+                </li>
+                <li>
+                    <i class="fa fa-question-circle-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-question-circle-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-hand-o-left fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-hand-o-left"</div>
+                </li>
+                <li>
+                    <i class="fa fa-hand-o-down fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-hand-o-down"</div>
+                </li>
+                <li>
+                    <i class="fa fa-hand-o-right fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-hand-o-right"</div>
+                </li>
+                <li>
+                    <i class="fa fa-hand-o-up fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-hand-o-up"</div>
+                </li>
+                <li>
+                    <i class="fa fa-mars-stroke fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-mars-stroke"</div>
+                </li>
+                <li>
+                    <i class="fa fa-venus fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-venus"</div>
+                </li>
+                <li>
+                    <i class="fa fa-circle-o-notch fa-fw fa-spin"></i>
+                    <div class="tab-code-ico">class="fa fa-circle-o-notch"</div>
+                </li>
+                <li>
+                    <i class="fa fa-cog fa-fw fa-spin"></i>
+                    <div class="tab-code-ico">class="fa fa-cog"</div>
+                </li>
+                <li>
+                    <i class="fa fa-refresh fa-fw fa-spin"></i>
+                    <div class="tab-code-ico">class="fa fa-refresh"</div>
+                </li>
+                <li>
+                    <i class="fa fa-spinner fa-fw fa-spin"></i>
+                    <div class="tab-code-ico">class="fa fa-spinner"</div>
+                </li>
+                <li>
+                    <i class="fa fa-check-square fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-check-square"</div>
+                </li>
+                <li>
+                    <i class="fa fa-check-square-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-check-square-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-cc-amex fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-cc-amex"</div>
+                </li>
+                <li>
+                    <i class="fa fa-area-chart fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-area-chart"</div>
+                </li>
+                <li>
+                    <i class="fa fa-chain fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-chain"</div>
+                </li>
+                <li>
+                    <i class="fa fa-arrows-alt fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-arrows-alt"</div>
+                </li>
+                <li>
+                    <i class="fa fa-compress fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-compress"</div>
+                </li>
+                <li>
+                    <i class="fa fa-expand fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-expand"</div>
+                </li>
+                <li>
+                    <i class="fa fa-apple fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-apple"</div>
+                </li>
+                <li>
+                    <i class="fa fa-bitbucket fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-bitbucket"</div>
+                </li>
+                <li>
+                    <i class="fa fa-edge fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-edge"</div>
+                </li>
+                <li>
+                    <i class="fa fa-firefox fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-firefox"</div>
+                </li>
+                <li>
+                    <i class="fa fa-facebook-square fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-facebook-square"</div>
+                </li>
+                <li>
+                    <i class="fa fa-github fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-github"</div>
+                </li>
+                <li>
+                    <i class="fa fa-qq fa-fw"></i>
+                    <div class="tab-code-ico">class="fafa-qq"</div>
+                </li>
+                <li>
+                    <i class="fa fa-wechat fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-wechat"</div>
+                </li>
+                <li>
+                    <i class="fa fa-weibo fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-weibo"</div>
+                </li>
+                <li>
+                    <i class="fa fa-renren fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-renren"</div>
+                </li>
+                <li>
+                    <i class="fa fa-heart fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-heart"</div>
+                </li>
+                <li>
+                    <i class="fa fa-heart-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-heart-o"</div>
+                </li>
+                <li>
+                    <i class="fa fa-heart-o fa-fw"></i>
+                    <div class="tab-code-ico">class="fa fa-heart-o"</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $("body").on("click", ".tab-ico-copy", function() {
+            var content = $(this).siblings('.tab-code-ico').text();
+            copyToClip(content);
+        });
+
+        function copyToClip(content) {
+            var aux = document.createElement("input");
+            aux.setAttribute("value", content);
+            document.body.appendChild(aux);
+            aux.select();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+            $(this).xh_prompt('success', '复制成功', 1000);
+        }
+    </script>
+</body>
+
+</html>

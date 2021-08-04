@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>XH后台管理系统</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="public/css/xh.css">
+    <link rel="stylesheet" type="text/css" href="public/css/xhico.css">
+    <link rel="stylesheet" type="text/css" href="public/css/main.css?tmp=23">
+    <link rel="stylesheet" type="text/css" href="public/Font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="public/js/jquery.js" type="text/javascript"></script>
+    <script src="public/js/xh.js?tmp=123" type="text/javascript"></script>
+    <script src="public/js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="xh-main">
+        <div class="t-box">
+            滑块验证暂时只有一种样式，还不能自定义颜色，宽度等参数，等下期版本更新。调用很简单，自适应pc和移动端，兼容pc端和移动端。
+        </div>
+        <div class="t-tab">
+            <div class="tab-title">滑块验证</div>
+            <div class="tab-content">
+                <div class="tab-alert">
+                    <div id="slider"></div>
+                </div>
+                <h5 class="tab-alert-h5">实例化xh_slider；<br>el: id名;<br>success: 验证成功返回参数“success”</h5>
+                <div class="tab-code xh-padd-10x">
+                    <pre><h3 class="xh-code-h3">code</h3><div class="xh-clearfix"></div><ol><li>&lt;script type="text/javascript"&gt;</li><li>    var a = new xh_slider({</li><li>        el: '#slider',</li><li>        success: function(data) {</li><li>            if (data == 'success') {</li><li>                // 验证成功之后的操作</li><li>                $(this).xh_prompt('success', '验证成功', 2000);</li><li>            }</li><li>        }</li><li>    });</li><li>&lt;/script&gt;</li></ol></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var a = new xh_slider({
+            el: '#slider',
+            success: function(data) {
+                //console.log(data);
+                if (data == 'success') {
+                    // 验证成功之后的操作
+                    $(this).xh_prompt('success', '验证成功', 2000);
+                }
+            }
+        });
+        //console.log(a);
+    </script>
+</body>
+
+</html>
